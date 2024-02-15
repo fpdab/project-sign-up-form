@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+}
+
+#left {
+  width: 30%;
+  background-image: url(riski-andriansyah-Gl6GljPtJpo-unsplash.png);
+}
+#logo-shadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 15vh;
+  margin-top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 14vh;
+  }
+  p {
+    font-size: calc(3vh + 2vw);
+    color: white;
+  }
+}
+#logo-shadow:hover {
+  img {
+    height: 16vh;
+  }
+}
+#right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(255, 250, 244);
+}
+
+#top,
+#mid,
+#bottom {
+  height: calc(50vh);
+  overflow: hidden;
+}
+
+#top {
+  margin-inline: calc(2vw + 20px);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: start;
+  h1 {
+    width: calc(45vw + 1vw);
+    font-size: calc(2vh + 1vw);
+    margin-block: 2vh;
+  }
+  #h2:hover {
+    color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+#mid {
+  background-color: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  padding-block: 10px;
+  padding-inline: 20px;
+  h2 {
+    margin-block: 2vh;
+    margin-left: 2vw;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-block: 10px;
+    label {
+      width: 20vw;
+      color: gray;
+      font-weight: 700;
+      font-size: 12px;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      margin-block: 1.5vh;
+      margin-inline: 2vw;
+    }
+    div:hover {
+      background-color: rgba(5, 180, 5, 0.1);
+      border-radius: 5px;
+      padding: 3px;
+      margin-block: calc(1.5vh - 3px);
+      margin-inline: calc(2vw - 3px);
+    }
+    input {
+      width: 20vw;
+      height: 5vh;
+    }
+    input:invalid {
+      background: rgb(255, 118, 118);
+    }
+    input:focus:valid {
+      background: lightblue;
+    }
+  }
+}
+
+#bottom {
+  margin-inline: calc(2vw + 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  padding-block: 2vh;
+}
+
+#bottom button {
+  background-color: green;
+  border-style: none;
+  padding-inline: 40px;
+  padding-block: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+}
+#button:hover {
+  background-color: rgb(5, 180, 5);
+}
+
+#bottom p {
+  font-size: 14px;
+  margin-block: 5px;
+  a {
+    text-decoration: none;
+    color: green;
+  }
+  a:hover {
+    color: rgb(5, 180, 5);
+  }
+}

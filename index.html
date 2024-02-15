@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Project: Sign-up Form</title>
+  </head>
+  <body>
+    <div id="left">
+      <div id="logo-shadow">
+        <img src="odin-lined.png" />
+        <p>The Odin Project</p>
+      </div>
+    </div>
+    <div id="right">
+      <div id="top">
+        <h1>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started.
+        </h1>
+        <h1 id="h2">You <em>know</em> you want to.</h1>
+      </div>
+      <div id="mid">
+        <h2>Let's do this!</h2>
+        <form action="https://httpbin.org/anything" method="post" id="form">
+          <div>
+            <label for="first-name">FIRST NAME</label>
+            <input
+              pattern="([A-Z][a-z]+)"
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="-"
+            />
+          </div>
+          <div>
+            <label for="last-name">LAST NAME:</label>
+            <input
+              pattern="([A-Z][a-z]+)"
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="-"
+            />
+          </div>
+          <div>
+            <label for="email">EMAIL:</label>
+            <input
+              type="email"
+              placeholder="a@bo.com"
+              name="email"
+              id="email"
+            />
+          </div>
+          <div>
+            <label for="phone-number">PHONE NUMBER:</label>
+            <input
+              pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
+              placeholder="123456789"
+              name="phone-number"
+              id="phone-number"
+            />
+          </div>
+          <div>
+            <label for="pass">PASSWORD:</label>
+            <input type="password" name="pass" id="pass" />
+            <p id="output"></p>
+          </div>
+          <div>
+            <label for="pass-confirm">CONFIRM PASSWORD:</label>
+            <input type="password" name="pass-confirm" id="pass-confirm" />
+          </div>
+        </form>
+      </div>
+      <div id="bottom">
+        <button id="button">Create account</button>
+        <p>Already have an account? <a href="">Log-in</a></p>
+      </div>
+    </div>
+  </body>
+</html>
